@@ -28,5 +28,10 @@ In the todo_main folder create views.py
 11. Create Templates folder in the main folder. In the that folder, create home.html file.
 Go to setting.py. In the TEMPLATES, at 'DIRS', give:  ['templates']
 
+12. To create a new app: python manage.py startapp YOUR_APP_NAME
 
+13. To register this app: Go to settings.py -> Installed_Apps: add YOUR_APP_NAME
 
+After creating models, we also need to make the migrations and apply those migrations. Hence run the command: python manage.py makemigrations
+This will generate the sql querries. Migrations file will be created. To apply those migrations into the database: python manage.py migrate
+The database table will be created.
